@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #2b2a27;
+    font-weight: 350;
+    font-style: normal;
+    margin: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #2b2a27;
+    text-decoration: none;
+}
+
+/*---------------
+    ヘッダー
+----------------*/
+header {
+    margin-bottom: 50px;
+}
+
+/*---------------
+    コンテナ 
+----------------*/
+
+/*---------- Achieve & News ----------*/
+.text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.category-magazine-detail {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.achieve,
+.new {
+    padding: 10px;
+}
+
+.category-fashion .readmore {
+    text-align: center;
+}
+
+.category-fashion .readmore a {
+    background-color: black;
+    color: white;
+}
+
+/*---------------
+    フッター 
+----------------*/
+.footer-top {
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.footer-top .footer-top-text,
+img {
+    text-align: center;
+}
+
+.footer-top img {
+    margin-top: 20px;
+}
+
+.footer-top .footer-top-text {
+    width: 30%;
+    margin: 0 10px;
+}
+
+footer p {
+    text-align: center;
+}

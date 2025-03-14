@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #2b2a27;
+    font-weight: 350;
+    font-style: normal;
+    margin: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #2b2a27;
+    text-decoration: none;
+}
+
+/*---------------
+    ヘッダー
+----------------*/
+
+
+/*---------------
+    コンテナ 
+----------------*/
+
+/*---------- メインビジュアル ----------*/
+
+
+/*---------------
+    フッター 
+----------------*/
