@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #2b2a27;
+    font-weight: 350;
+    font-style: normal;
+    margin: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #2b2a27;
+    text-decoration: none;
+}
+
+/*---------------
+    ヘッダー
+----------------*/
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 10%;
+}
+
+#header-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#header-menu ul {
+    display: flex;
+}
+
+#header-menu ul li {
+    margin-left: 10px;
+}
+
+
+/*---------------
+    コンテナ 
+----------------*/
+#container {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* ブロック要素自体を中央ぞろえにするプロパティ(親要素内で要素を水平方向に中央揃え) */
+    padding: 0 5%;
+    /* 上下左右の内側の余白を指定 */
+}
+
+#container section {
+    width: 100%;
+    /* display: flex;の子要素にwidth: 100%を指定することで横並びの幅が均等になる */
+}
+
+/*---------- 左 ----------*/
+#item-image {
+    padding: 10px;
+}
+
+#item-image img {
+    width: 80%;
+}
+
+/*---------- 右 ----------*/
+
+#item-information h2 {
+    margin-bottom: 30px;
+    border-top: solid 1px #2a2a2a;
+    border-bottom: solid 1px #2a2a2a;
+    padding-top: 10px;
+    font-size: medium;
+}
+
+#item-information p {
+    margin-bottom: 30px;
+    font-size: smaller;
+}
+
+.item-information-size>*,
+.select-size>* {
+    width: 100%;
+    /* 子要素の幅を親要素と同じにする */
+    box-sizing: border-box;
+    /* 子要素の幅を親要素と同じにする */
+}
+
+#item-information .btn {
+    display: inline-block;
+    background-color: #404040;
+    padding: 14px 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    /* 子要素の幅を親要素と同じにする */
+}
+
+.btn button {
+    color: #ffff;
+    font-size: 1rem;
+}
+
+/*---------------
+    フッター 
+----------------*/
+footer {
+    text-align: center;
+}
