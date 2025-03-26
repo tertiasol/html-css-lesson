@@ -100,6 +100,7 @@ a {
     font-size: smaller;
 }
 
+/*------ テーブル ------*/
 .item-information-size>*,
 .select-size>* {
     width: 100%;
@@ -108,6 +109,74 @@ a {
     /* 子要素の幅を親要素と同じにする */
 }
 
+.table1,
+.table2 {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 最後だけ縦線を入れない*/
+.table1 th:not(:last-child),
+.table1 td:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+/* 最後だけ横線を入れない*/
+.table1 tr:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.table2 thead,
+.table2 tr th {
+    background: #e8e8e8;
+}
+
+.table2 th,
+.table2 td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.table1 .color,
+.table1 .size {
+    width: 100px;
+}
+
+.table1 tr {
+    height: 40px
+}
+
+/*------ テーブル（セレクトボックス） ------*/
+select {
+    position: relative;
+    width: 80%;
+    text-align: center;
+}
+
+/*
+.item-size {
+    position: relative;
+    border: solid 1px #2a2a2a;
+    margin: 15px;
+}
+*/
+
+/* セレクトボックス矢印のデザイン */
+/*.item-size::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 16px;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(45deg);
+}
+*/
+
+/*------ ボタン ------*/
 #item-information .btn {
     display: inline-block;
     background-color: #404040;
@@ -115,13 +184,16 @@ a {
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
+
     width: 100%;
     /* 子要素の幅を親要素と同じにする */
 }
 
 .btn button {
     color: #ffff;
+    background-color: #404040;
     font-size: 1rem;
+    width: 100%;
 }
 
 /*---------------
@@ -129,4 +201,39 @@ a {
 ----------------*/
 footer {
     text-align: center;
+}
+
+/*-------------------------------------------
+    SP
+-------------------------------------------*/
+/* 幅が最大で896pxのとき（スマホに適用） */
+@media screen and (max-width: 896px) {
+
+    /* andと()の間に空白がないと効かなくなるので注意 */
+    header {
+        margin-bottom: 0;
+        border-bottom: none;
+        padding: 36px 16px 16px 16px;
+    }
+
+    .logo a img {
+        width: 40%;
+    }
+
+    #header-menu {
+        overflow-x: scroll;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #container #item-image {
+        max-width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    #container #item-information {
+        padding: 0 16px;
+    }
 }
