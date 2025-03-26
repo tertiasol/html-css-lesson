@@ -229,6 +229,7 @@ footer {
 
     #container {
         flex-direction: column;
+        font-size: smaller;
     }
 
     #container #item-image {
