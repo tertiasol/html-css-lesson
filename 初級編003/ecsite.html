@@ -7,8 +7,9 @@
     <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="ecsite.css">
+    <!-- レスポンシブを適用するときに必要な記述 -->
+    <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
@@ -54,43 +55,50 @@
                 </p>
                 <p>&yen;9,999 +tax</p>
                 <div class="select-size">
-                    <table border="1" class="table1">
+                    <table class="table1">
                         <tr>
-                            <th>Color</th>
-                            <th>Size</th>
-                            <th></th>
+                            <th class="color">Color</th>
+                            <th class="size">Size</th>
+                            <th class="selectbox"></th>
                         </tr>
                         <tr>
                             <td>White</td>
                             <td>S</td>
                             <td>
-                                <select name="item-size">
-                                    <option value="size1">1</option>
-                                    <option value="size2">2</option>
-                                    <option value="size3">3</option>
-                                </select>
+                                <!-- 独自にセレクトボックスの矢印をデザインするためにselectをdivで包む -->
+                                <div class="item-size">
+                                    <select required>
+                                        <option value="size1">1</option>
+                                        <option value="size2">2</option>
+                                        <option value="size3">3</option>
+                                    </select>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <td>White</td>
                             <td>M</td>
                             <td>
-                                <select name="item-size">
-                                    <option value="size1">1</option>
-                                    <option value="size2">2</option>
-                                    <option value="size3">3</option>
-                                </select>
+                                <div class="item-size">
+                                    <select required>
+                                        <option value="size1">1</option>
+                                        <option value="size2">2</option>
+                                        <option value="size3">3</option>
+                                    </select>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <td>White</td>
                             <td>L</td>
                             <td>
-                                <select name="item-size">
-                                    <option value="size1">1</option>
-                                    <option value="size2">2</option>
-                                    <option value="size3">3</option>
-                                </select>
+                                <div class="item-size">
+                                    <select required>
+                                        <option value="size1">1</option>
+                                        <option value="size2">2</option>
+                                        <option value="size3">3</option>
+                                    </select>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -101,13 +109,15 @@
                 </div>
 
                 <div class="item-information-size">
-                    <table border="1" class="table2">
-                        <tr>
-                            <th>Size</th>
-                            <th>Chest</th>
-                            <th>Waist</th>
-                            <th>Height</th>
-                        </tr>
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Chest</th>
+                                <th>Waist</th>
+                                <th>Height</th>
+                            </tr>
+                        </thead>
                         <tr>
                             <th>S</th>
                             <td>99~99</td>
