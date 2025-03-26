@@ -184,17 +184,20 @@ select {
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
+    color: white;
 
     width: 100%;
     /* 子要素の幅を親要素と同じにする */
 }
 
+/* いらない
 .btn button {
     color: #ffff;
     background-color: #404040;
     font-size: 1rem;
     width: 100%;
 }
+*/
 
 /*---------------
     フッター 
